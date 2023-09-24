@@ -1,0 +1,9 @@
+fdisk -l
+    2  mkfs.ext4 /dev/xvdf
+    3  mkdir /isha-volume
+    4  mount /dev/xvdf /isha-volume/
+    5  df -h
+    6  cd /isha-volume/
+
+
+umount /dev/xvdf
