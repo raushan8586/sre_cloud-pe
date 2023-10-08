@@ -1,0 +1,20 @@
+root@ip-172-31-9-239:~#
+history
+
+sudo su -
+    1  apt update -y
+    2  clear
+    3  docker version
+    4  apt install docker.io -y
+    5  clear
+    6  docker version
+    7  docker images
+    8  docker pull httpd
+    9  docker images
+   10  docker inspect 359570977af2
+   11  docker run -itd -p 82:80 httpd
+   12  docker ps
+   13  lsof -i -P | grep LISTEN
+   14  docker ps
+   15  docker exec -it 6a706647dd55 /bin/bash
+   16  history
