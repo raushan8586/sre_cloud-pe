@@ -1,0 +1,11 @@
+https://hub.docker.com/
+https://docs.docker.com/engine/reference/run/
+
+Dockerfile
+https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+
+Docker Netowrk:
+https://docs.docker.com/network/drivers/
+
+ECR:
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html
