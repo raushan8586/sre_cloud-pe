@@ -17,4 +17,27 @@ sudo su -
    13  lsof -i -P | grep LISTEN
    14  docker ps
    15  docker exec -it 6a706647dd55 /bin/bash
-   16  history
+   docker commit 39e httpd_updated
+   11  docker images
+   12  docker ps
+   13  docker images
+   14  docker image tag httpd_updated:latest raushan8586/cloudpe-sre:httpd_updated
+   15  docker image push raushan8586/cloudpe-sre:httpd_updated
+   16  ls -l
+   17  mkdir project1
+   18  cd project1/
+   19  touch Dockerfile
+   20  vi Dockerfile 
+   21  cat Dockerfile 
+   22  vi index1.html
+   23  ls -l
+   24  cat index1.html 
+   25  ls -l
+   26  docker build . -t httpd1
+   27  docker images
+   28  docker ps
+   29  docker inspect 39e
+   30  docker network ls
+   31  docker inspect 7b0
+   32  docker network ls
+   33  docker inspect 39e
