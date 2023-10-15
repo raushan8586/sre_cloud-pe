@@ -41,3 +41,37 @@ sudo su -
    31  docker inspect 7b0
    32  docker network ls
    33  docker inspect 39e
+
+
+cd isha-volume1/
+   44  ls -l
+   45  cd _data
+   46  ls -l
+   47  cat index.html
+   48  cat index1.html
+   49  vi index2.html
+   50  docker exec -it 704 /bin/bash
+   51  docker run -itd --mount source=isha-volume1,target=/usr/local/apache2/htdocs --name web2 -p 83:80 httpd
+   52  docker ps
+   53  docker exec -it 5ff /bin/bash
+   54  cd ~
+   55  ls -l
+   56  mkdir project2
+   57  cd project2
+   58  vi docker-compose.yaml
+   59  ls -l
+   60  docker-compose version
+   61  apt install docker-compose -y
+   62  clear
+   63  docker-compose version
+   64  docker ps
+   65  docker rm -f 5ff 704
+   66  ls -l
+   67  docker ps
+   68  docker-compose up -d
+   69  docker ps
+   70  docker exec -it b6c /bin/bash
+   71  docker ps
+   72  docker exec -it f6d /bin/bash
+   73  docker images
+   74  docker stats
