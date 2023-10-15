@@ -75,3 +75,5 @@ cd isha-volume1/
    72  docker exec -it f6d /bin/bash
    73  docker images
    74  docker stats
+
+docker logs f6dee523d0c4
