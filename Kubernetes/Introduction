@@ -18,4 +18,13 @@ Azure --> AKS
 GCP --> GKE
 Oracle --> OKE
 
+Kubernetes Objects:
+1. Pods
+2. Replica Set --> To maintain stable number of replica pods --> Auto-healing
+3. Deployment --> auto-deployment without downtime
+4. Services --> to expose the pods
+  a. NodePort Service (to expose the front-end pods)
+  b. ClusterIP Service (to load balance the traffic across back-end pods)
+  c. LoadBalancer Service (to load balance the traffic across multiple nodes)
+
 
