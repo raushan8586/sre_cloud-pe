@@ -2,10 +2,20 @@ Production systems:
 1. Auto-healing of containers
 2. auto-scaling of containers --> scale-out and scale-in
 3. auto-deployment of containers
-4. auto-scheuling
+4. auto-scheduling
 5. auto-clustering
 
 A container Engine is unable to provide above features.
 Container Engine -> Docker, Containerd, Podman, Rocket
 
-We need Container Orchestration Engine --> Kuberntes, Docker Swarm
+We need Container Orchestration Engine --> Kubernetes (K8s), Docker Swarm
+
+K8s --> Google --> CNCF --> Open Source
+Borg
+
+AWS --> EKS (Managed Service) -> 0.25$/hr
+Azure --> AKS
+GCP --> GKE
+Oracle --> OKE
+
+
