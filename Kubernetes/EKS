@@ -1,3 +1,8 @@
 3 Comamnd lines:
+
 1. kubectl
-2. aws cli 
+2. aws cli
+3. EKSCTL --> The official CLI for Amazon EKS
+https://eksctl.io/getting-started/
+
+eksctl create cluster
