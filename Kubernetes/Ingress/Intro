@@ -1,3 +1,5 @@
+VMs
+----
 Application deployed on a VM
 
 Path-based routing
@@ -5,7 +7,11 @@ ALB --> TG1 --> 10 EC2 instances --> app1
 ALB --> TG2 --> 20 EC2 instances --> app2
 
 --------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 
+
+Containers
+----------
 ms1 --> pod1 --> container1 --> LB1
 ms2 --> pod2 --> container2 --> LB2
 ms3 --> pod3 --> container3 --> LB3
