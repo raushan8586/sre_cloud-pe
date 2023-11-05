@@ -1,0 +1,21 @@
+16  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+   17  kubectl get all -n ingress-nginx
+   18  ls -l
+   19  cd september-2023-repo/
+   20  ls -l
+   21  cd ..
+   22  cd project1/
+   23  ls -l
+   24  cd ..
+   25  ls -l
+   26  cd /home/cloudshell-user/
+   27  ls -l
+   28  cat app1.yaml 
+   29  ls -l
+   30  kubectl apply -f app1.yaml 
+   31  kubectl get all
+   32  cat ingress.yaml 
+   33  kubectl apply -f ingress.yaml 
+   34  kubectl get ns
+   35  kubectl get all -n ingress-nginx
+   36  cat ingress.yaml
