@@ -1,0 +1,29 @@
+Application deployed on a VM
+
+Path-based routing
+ALB --> TG1 --> 10 EC2 instances --> app1
+ALB --> TG2 --> 20 EC2 instances --> app2
+
+--------------------------------------------------------------------------------------
+
+ms1 --> pod1 --> container1 --> LB1
+ms2 --> pod2 --> container2 --> LB2
+ms3 --> pod3 --> container3 --> LB3
+
+Not recommneded
+
+Ingress --> path/url based routing
+
+1. Ingress Controller --> Deploy this in the cluster to read the ingress resource and its rules. It creates the load balancer.
+  --> Nginx Ingress Controller, AWS ALB, Traefik, HA Proxy
+
+2. Ingress Resource --> Rules to re-direct the request to services
+
+
+Steps:
+1. Install Nginx controller, which creats the LB as well 
+
+--> kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
+
+2. Deploy ms1 with svc1
+3. Deploy Ingress reosource (PATH/URL)--> ingress.yaml --> rules
