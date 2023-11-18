@@ -1,0 +1,13 @@
+https://www.jenkins.io/doc/book/installing/linux/
+
+
+ 1  apt update -y
+    2  apt install fontconfig openjdk-17-jre -y
+    3  java -version
+    4  wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    5  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+    6  apt update -y
+    7  apt install jenkins -y
+    8  lsof -i -P -n | grep LISTEN
+    9  ps -ef | grep java
+   10  cat /var/lib/jenkins/secrets/initialAdminPassword
