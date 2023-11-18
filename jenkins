@@ -11,3 +11,18 @@ https://www.jenkins.io/doc/book/installing/linux/
     8  lsof -i -P -n | grep LISTEN
     9  ps -ef | grep java
    10  cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
+Docker-Job
+sudo docker rm -f $(sudo docker ps -a -q)
+sudo docker build /var/lib/jenkins/workspace/Docker-job/ -t httpd1
+sudo docker run -itd -p 82:80 httpd1
+
+
+If you need to run commands/scripts as root user-->
+
+visudo
+jenkins ALL=(ALL) NOPASSWD: ALL    --> Add this line to sudoers
+
+
+Plugin --> Build Pipeline
