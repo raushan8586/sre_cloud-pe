@@ -17,3 +17,6 @@ https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-oracle
 
 S3
 https://aws.amazon.com/s3/storage-classes/
+
+EKS/Terraform
+https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
