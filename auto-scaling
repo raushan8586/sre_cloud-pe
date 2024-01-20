@@ -1,0 +1,16 @@
+
+peak load --> 500,000 user load / TPS --> 500 servers
+
+min load --> 100,000 user load / TPS --> 100 servers 
+
+auto-scaling --> criteria --> CPU, Memory
+
+min servers --> 100
+max servers --> 750
+desired servers --> 300
+
+scaling:
+horizontal auto-scaling --> 4 vcpus, 16 GB RAM --> scale out, scale in
+vertical auto-scaling
+
+pre-configured --> web-servers/app-servers -- core/ram/disk --> custom AMI
