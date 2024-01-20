@@ -14,3 +14,10 @@ horizontal auto-scaling --> 4 vcpus, 16 GB RAM --> scale out, scale in
 vertical auto-scaling
 
 pre-configured --> web-servers/app-servers -- core/ram/disk --> custom AMI
+
+scaling policies:
+1. Target tracking scaling policy
+2. simple scaling
+3. step scaling
+4. scheduled action
+5. predictive scaling
