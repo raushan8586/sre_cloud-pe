@@ -9,6 +9,7 @@ https://docs.aws.amazon.com/cli/latest/
 
 3. EKSCTL --> The official CLI for Amazon EKS --> https://eksctl.io/getting-started/
 Installation: https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
+https://eksctl.io/installation/
 
 
 eksctl create cluster
