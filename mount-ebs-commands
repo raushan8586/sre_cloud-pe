@@ -7,3 +7,8 @@ fdisk -l
 
 
 umount /dev/xvdf
+
+df -h
+df -hT --> know the filesystems --> ext4 or xfs
+lsblk --> list block devices
+fdisk -l --> list all the disk partitions
