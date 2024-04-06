@@ -1,0 +1,8 @@
+1. Create S3 bucket, Upload the object (jpeg) and access it publicy
+2. Edir the bucket permission to get all the objects being uploaded
+3. Go over all the S3 storage classes specifications
+4. Create Static website in S3 and share the url
+5. Create Lifecycle rule
+6. Create Replicationn rule
+7. Enable versioning
+8. Enable Transfer Acceleration
