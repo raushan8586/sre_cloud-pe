@@ -20,3 +20,6 @@ https://aws.amazon.com/s3/storage-classes/
 
 EKS/Terraform
 https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
+
+Docker Run
+https://docs.docker.com/reference/cli/docker/container/run/
