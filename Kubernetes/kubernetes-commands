@@ -1,3 +1,5 @@
+eksctl create cluster --name=eksdemo1
+
 eksctl create cluster --name=eksdemo1 --without-nodegroup
 
 eksctl utils associate-iam-oidc-provider --region eu-central-1 --cluster eksdemo1 --approve
