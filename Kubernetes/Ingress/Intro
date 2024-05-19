@@ -3,8 +3,8 @@ VMs
 Application deployed on a VM
 
 Path-based routing
-ALB --> TG1 --> 10 EC2 instances --> app1
-ALB --> TG2 --> 20 EC2 instances --> app2
+ALB -->  --> app1 --> TG1 --> 10 EC2 instances
+ALB -->  --> app2 --> TG2 --> 20 EC2 instances
 
 --------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
