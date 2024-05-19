@@ -33,3 +33,7 @@ Steps:
 
 2. Deploy ms1 with svc1
 3. Deploy Ingress reosource (PATH/URL)--> ingress.yaml --> rules
+
+Path-based routing
+ALB -->  path1/sub-domain1 (aws.amazon.com)--> svc1 --> pods of m1
+ALB -->  path2/sub-domain2 (docs.aws.amazon.com) --> svc2 --> pods of m2
