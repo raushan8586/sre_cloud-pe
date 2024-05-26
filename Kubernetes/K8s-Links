@@ -1,2 +1,3 @@
 HPA - 
 https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
+https://github.com/kubernetes/enhancements/blob/master/keps/sig-autoscaling/853-configurable-hpa-scale-velocity/README.md#default-values
