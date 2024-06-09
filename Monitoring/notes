@@ -1,0 +1,28 @@
+Monitoring 
+
+Health Check/Uptime
+Performance
+
+Roles of a SRE/DevOps Engineer:
+1. POC on the monitoring tools --> metrics/log
+2. setup/install the monitoring tools
+3. Creating Dashboards for metrics -->
+	CPU
+	Memory
+	Response time
+	Status Code
+	Logging
+	Disk IOPS
+	Read/Write Latency
+	Connections
+	Throughput
+4. Alerts
+
+
+Observalibility --> Metrics + Logging + Analysis
+
+Continuous monitoring
+
+Prometheus & Grafana
+
+time-series
