@@ -26,3 +26,6 @@ https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
 
 Docker Run
 https://docs.docker.com/reference/cli/docker/container/run/
+
+AWS CLI
+https://docs.aws.amazon.com/cli/latest/
