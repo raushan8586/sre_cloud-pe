@@ -1,0 +1,7 @@
+apt update -y
+    2  apt install apache2 -y
+    3  lsof -i -P -n | grep LISTEN
+    4  cat /var/www/html/index.html
+    5  cd /var/www/html/
+    6  ls -l
+    7  vi sre-course.html
