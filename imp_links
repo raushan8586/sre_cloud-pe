@@ -29,3 +29,6 @@ https://docs.docker.com/reference/cli/docker/container/run/
 
 AWS CLI
 https://docs.aws.amazon.com/cli/latest/
+
+IAM role for publishing flow logs to CloudWatch Logs:
+https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-iam-role.html
