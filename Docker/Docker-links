@@ -1,15 +1,51 @@
+  Images:
 https://hub.docker.com/
-https://docs.docker.com/engine/reference/run/
+https://hub.docker.com/search?image_filter=official
 
-Dockerfile
-https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+https://docs.docker.com/
 
-Docker Netowrk:
-https://docs.docker.com/network/drivers/
+Docker Commands:
+https://docs.docker.com/engine/reference/commandline/docker/
 
-ECR:
-https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html
+Docker Run Command:
+https://docs.docker.com/reference/cli/docker/container/run/
 
-Docker-compose:
+Dockerfile --> https://jenkov.com/tutorials/docker/dockerfile.html#entrypoint
+https://docs.docker.com/build/building/multi-stage/
+
+*COPY vs ADD, CMD vs ENTRYPOINT
+
+Examples
+https://github.com/komljen/dockerfile-examples/tree/master
+
+Docker Network --> https://docs.docker.com/network/drivers/
+
+Docker-Compose --> https://docs.docker.com/compose/samples-for-compose/
+https://docs.docker.com/compose/
+https://docs.docker.com/compose/intro/history/#compose-file-format-versioning
+
+Resources for a container:
+https://stackoverflow.com/questions/42345235/how-to-specify-memory-cpu-limit-in-docker-compose-version-3
+
+
+All about Docker & Docker-compose-->
+https://www.baeldung.com/ops/?s=docker+compose
+
+Docker-compose Restart Policy:
+https://www.baeldung.com/ops/docker-compose-restart-policies#:~:text=Restart%20Policy%20in%20Docker%20Compose,yml%20file.
+
 https://docs.docker.com/compose/samples-for-compose/
 
+Installation:
+Install latest version of docker-compose: https://github.com/docker/compose/releases/
+$ sudo apt remove docker-compose --> optional, in case, you need to remove docker-compose from ubuntu VM
+
+$ wget https://github.com/docker/compose/releases/download/v2.24.1/docker-compose-linux-x86_64
+$ chmod +x docker-compose-linux-x86_64
+$ sudo mv docker-compose-linux-x86_64 /usr/bin/docker-compose
+$ docker-compose --version
+Docker Compose version v2.24.1
+$ sudo docker-compose up
+# Things work
+
+MySQL --> https://www.w3schools.com/MySQL/default.asp
