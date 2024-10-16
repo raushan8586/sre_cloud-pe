@@ -1,9 +1,9 @@
 Production systems:
 1. Auto-healing of containers
 2. auto-scaling of containers --> scale-out and scale-in
-3. auto-deployment of containers
-4. auto-scheduling
-5. auto-clustering
+3. Auto-load balancing of requests across all the containers
+4. auto-deployment of containers
+5. auto-scheduling & Scheduling
 
 A container Engine is unable to provide above features.
 Container Engine -> Docker, Containerd, Podman, Rocket
