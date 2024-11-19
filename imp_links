@@ -35,3 +35,6 @@ https://docs.aws.amazon.com/cli/latest/
 
 IAM role for publishing flow logs to CloudWatch Logs:
 https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-iam-role.html
+
+Ansible
+https://docs.ansible.com/ansible/2.8/modules/list_of_all_modules.html
