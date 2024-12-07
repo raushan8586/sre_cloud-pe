@@ -1,3 +1,11 @@
+Load Pattern
+
+7 AM - 10 AM --> 200 TPS --> 20 servers --> 3 hrs
+10 AM - 6 PM --> 100 TPS --> 10 servers --> 8 hrs
+6 PM - 11 PM --> 500 TPS --> 50 servers --> 5 hrs
+11 PM - 7 AM (ND) --> 100 TPS --> 10 Servers --> 8 hrs
+
+auto-scaling
 
 peak load --> 500,000 user load / TPS --> 500 servers
 
@@ -11,7 +19,7 @@ desired servers --> 300
 
 scaling:
 horizontal auto-scaling --> 4 vcpus, 16 GB RAM --> scale out, scale in
-vertical auto-scaling
+vertical auto-scaling --> scale up and scale down
 
 pre-configured --> web-servers/app-servers -- core/ram/disk --> custom AMI
 
