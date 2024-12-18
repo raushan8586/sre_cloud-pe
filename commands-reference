@@ -1,3 +1,12 @@
+ssh from windows command prompt
+------------------------------------
+ssh -i "isha-dec-2024.pem" ubuntu@13.235.8.48
+
+ssh -i "<key-pair>" <default-user>@<public-ip> 
+
+For Redhat, Amazon linux --> default user --> ec2-user
+
+
 Become a root user --> sudo su -
 
 update the package --> apt update -y
