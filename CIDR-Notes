@@ -1,3 +1,9 @@
+Region --> VPC --> IGW
+AZs --> subnets --> Public and Private Subnets --> Route table
+
+Browser --> www.amazon.com --> Domain Server (3rd party) --> re-direction of requests to LB -->
+----> web-servers --> application-servers --> Databases
+
 VPC
 CIDR --> Classless inter-domain Routing
 
