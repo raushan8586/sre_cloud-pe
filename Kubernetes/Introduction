@@ -25,6 +25,6 @@ Kubernetes Objects:
 4. Services --> to expose the pods
   a. NodePort Service (to expose the front-end pods)
   b. ClusterIP Service (to load balance the traffic across back-end pods)
-  c. LoadBalancer Service (to load balance the traffic across multiple nodes)
+  c. LoadBalancer Service (to load balance the traffic across multiple pods present across nodes)
 5. Horizontal Pod Auto-Scaler (hpa)
 6. Ingress
