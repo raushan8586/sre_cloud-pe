@@ -1,0 +1,92 @@
+samples:
+
+-------------------------------
+JMETER & Selenium
+----------------------------
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Check out your source code
+                git 'https://your-repo-url.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                script {
+                    // Build your application (optional, depending on your project)
+                    sh 'echo "Building application..."'
+                }
+            }
+        }
+
+        stage('Run JMeter Tests') {
+            steps {
+                script {
+                    // Run JMeter tests
+                    sh 'jmeter -n -t your_test_plan.jmx -l results.jtl'
+                }
+            }
+        }
+
+        stage('Run Selenium Tests') {
+            steps {
+                script {
+                    // Run Selenium tests
+                    sh 'java -jar selenium-server-standalone.jar -role hub &'
+                    sh 'java -jar selenium-server-standalone.jar -role node -hub http://localhost:4444/grid/register &'
+                    sh 'mvn test'
+                }
+            }
+        }
+
+        stage('Archive Results') {
+            steps {
+                archiveArtifacts artifacts: 'results.jtl', allowEmptyArchive: true
+                junit 'target/surefire-reports/*.xml'
+            }
+        }
+
+        stage('Cleanup') {
+            steps {
+                // Optional: clean up any resources
+                sh 'echo "Cleaning up..."'
+            }
+        }
+    }
+
+    post {
+        always {
+            // Actions that always need to be performed after the pipeline completes
+            cleanWs()
+        }
+    }
+}
+
+---------
+Selenium
+--------
+
+pipeline {
+    agent any 
+    stages {
+        stage('Checkout Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/your-repo/your-project.git' 
+            }
+        }
+        stage('Run Selenium Tests') {
+            steps {
+                sh 'mvn clean test'  // Assuming you use Maven to run your Selenium tests
+            }
+        }
+        stage('Publish Test Results') {
+            steps {
+                junit(testResults: 'target/surefire-reports/*.xml')  // Publish test results to Jenkins
+            }
+        }
+    }
+}
