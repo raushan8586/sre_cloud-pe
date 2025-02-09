@@ -7,6 +7,7 @@ Roles of a SRE/DevOps Engineer:
 1. POC on the monitoring tools --> metrics/log
 2. setup/install the monitoring tools
 3. Creating Dashboards for metrics -->
+	Uptime
 	CPU
 	Memory
 	Response time
