@@ -11,7 +11,7 @@ Roles of a SRE/DevOps Engineer:
 	Memory
 	Response time
 	Status Code
-	Logging
+	Errors / Exception in the logs --> Logging
 	Disk IOPS
 	Read/Write Latency
 	Connections
