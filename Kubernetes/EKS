@@ -1,15 +1,38 @@
-3 Comamnd lines:
+3 Command lines are required:
+1. kubectl --> Default command line for kuberntes --> https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 
-1. kubectl
-Installation: https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
-
-2. aws cli
-Installation: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-https://docs.aws.amazon.com/cli/latest/
-
-3. EKSCTL --> The official CLI for Amazon EKS --> https://eksctl.io/getting-started/
-Installation: https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
-https://eksctl.io/installation/
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin
 
 
-eksctl create cluster
+2. aws cli --> https://docs.aws.amazon.com/cli/latest/ --> https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+
+aws configure
+
+
+3. EKSCTL --> command line for AWS EKS --> https://eksctl.io/getting-started/
+--> https://eksctl.io/installation/
+
+Logs:
+https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/
+
+
+AWS Documentation --> https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html
+
+Namespaces --> Logical grouping of resources
+
+default           Active   14m
+kube-node-lease   Active   14m
+kube-public       Active   14m
+kube-system       Active   14m
+
+CoreDNS
+CoreDNS is a flexible, extensible DNS server that can serve as the Kubernetes cluster DNS. CoreDNS provides name resolution for all Pods in the cluster. This add-on is installed, by default, on your cluster. For more information, see Working with the CoreDNS Amazon EKS add-on.
+
+kube-proxy
+This add-on maintains network rules on your Amazon EC2 nodes and enables network communication to your Pods. This add-on is installed, by default, on your cluster. For more information, see Working with the Kubernetes kube-proxy add-on.
