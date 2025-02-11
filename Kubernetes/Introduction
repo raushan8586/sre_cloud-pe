@@ -28,3 +28,4 @@ Kubernetes Objects:
   c. LoadBalancer Service (to load balance the traffic across multiple pods present across nodes)
 5. Horizontal Pod Auto-Scaler (hpa)
 6. Ingress
+7. DaemonSet
