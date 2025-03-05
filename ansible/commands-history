@@ -1,0 +1,51 @@
+1  clear
+    2  apt update -y
+    3  clear
+    4  python3 --version
+    5  apt install software-properties-common -y
+    6  apt-add-repository --yes --update ppa:ansible/ansible -y
+    7  apt update -y
+    8  apt install ansible -y
+    9  clear
+   10  ansible --version
+   11  cd /etc/ansible/
+   12  ls -l
+   13  cat ansible.cfg
+   14  ls -l
+   15  date
+   16  ls -l
+   17  vi hosts
+   18  clear
+   19  cd ~
+   20  cd .ssh
+   21  ls 0k
+   22  ls -l
+   23  cat authorized_keys
+   24  ssh-keygen
+   25  ls -l
+   26  cat id_ed25519.pub
+   27  ansible -m ping host1
+   28  ansible -m ping host2
+   29  ansible -m ping host1
+   30  ansible -m ping host2
+   31  ansible -m ping dev
+   32  cd /etc/ansible/
+   33  ls -l
+   34  uptime
+   35  ansible dev -m shell -a "uptime"
+   36  ansible dev -m shell -a "df -h"
+   37  ansible host1 -m shell -a "apt update -y"
+   38  ansible dev -m shell -a "free -h"
+   39  ansible dev -m shell -a "free -h" > memory-usage.txt
+   40  ls -l
+   41  cat memory-usage.txt
+   42  vi first-playbook.yaml
+   43  cat first-playbook.yaml
+   44  ansible-playbook first-playbook.yaml --syntax-check
+   45  ansible-playbook first-playbook.yaml
+   46  vi first-playbook.yaml
+   47  ansible-playbook first-playbook.yaml
+   48  ansible dev -m shell -a "lsof -i -P -n | grep LISTEN"
+   49  vi first-playbook.yaml
+   50  ansible-playbook first-playbook.yaml
+   51  ansible dev -m shell -a "lsof -i -P -n | grep LISTEN"
