@@ -1,0 +1,27 @@
+Infrastructure Automation
+Terraform --> IaC
+Ansible --> Configuration Management
+
+Master
+-------
+sudo apt update
+python3 --version
+sudo apt install software-properties-common
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt update
+sudo apt install ansible
+
+Hosts
+-----
+sudo apt update
+python3 --version
+Ssh connectivity keyless
+ssh-keygen
+Common Commands
+ansible -m ping all
+ansible -m ping DEV
+DEV : Group
+ansible -m ping host1
+ansible -m ping host2
+Run ansible Playbook
+Ansible-playbook <sample-playbook.yaml>
