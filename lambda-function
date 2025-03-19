@@ -1,0 +1,33 @@
+// Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// SPDX-License-Identifier: Apache-2.0
+
+import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
+const ses = new SESClient({ region: "ap-south-1" });
+
+export const handler = async(event) => {
+  const command = new SendEmailCommand({
+    Destination: {
+      ToAddresses: ["raushan8586.kumar@gmail.com"],
+    },
+    Message: {
+      Body: {
+        Text: { Data: "Lambda_intellipaat_hello" },
+      },
+
+      Subject: { Data: "Lambda_intellipaat is working fine!" },
+    },
+    Source: "ragoth.varma@gmail.com",
+  });
+
+  try {
+    let response = await ses.send(command);
+    // process data.
+    return response;
+  }
+  catch (error) {
+    // error handling.
+  }
+  finally {
+    // finally.
+  }
+};
