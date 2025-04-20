@@ -18,6 +18,14 @@ Azure --> AKS
 GCP --> GKE
 Oracle --> OKE
 
+Kubernetes Cluster components:
+1. API Server
+2. Scheduler
+3. Control Manager
+4. etcd
+5. Kubelet
+6. kube-proxy
+
 Kubernetes Objects:
 1. Pods
 2. Replica Set --> To maintain stable number of replica pods --> Auto-healing
