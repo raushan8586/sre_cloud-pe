@@ -1,5 +1,5 @@
 lsblk
-fdisk -l
+sudo fdisk -l
     2  mkfs.ext4 /dev/xvdf
     3  mkdir /isha-volume
     4  mount /dev/xvdf /isha-volume/
