@@ -17,6 +17,7 @@ https://www.atatus.com/blog/difference-between-ipv4-and-ipv6-why-havent-we-entir
 
 EFS implementation Architecture example:
 https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-oracle-business-intelligence-12c-to-the-aws-cloud-from-on-premises-servers.html?did=pg_card&trk=pg_card
+https://docs.aws.amazon.com/efs/latest/ug/performance.html#performancemodes
 
 IAM Policy - Resource:
 https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html
