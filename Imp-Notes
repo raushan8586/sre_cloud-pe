@@ -15,3 +15,10 @@ user --> https (port 443) --> application running on port 443
 ssh to linux server
 
 ssh -i "may-sre-11am.pem" ubuntu@13.250.102.102
+
+sudo su -
+apt update -y
+apt install apache2 -y
+lsof -i -P -n | grep LISTEN
+
+open port 80 in security group inbound rule
