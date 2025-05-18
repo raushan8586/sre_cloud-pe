@@ -4,3 +4,10 @@ Factors to decide a region:
 3. Service availability
 4. Government Regulations
 5. Cost
+
+
+user --> ssh (port 22) --> linux server
+user --> rdp (port 3389) --> windows server
+
+user --> http (port 80) --> application running on port 80
+user --> https (port 443) --> application running on port 443
