@@ -22,3 +22,6 @@ apt install apache2 -y
 lsof -i -P -n | grep LISTEN
 
 open port 80 in security group inbound rule
+
+Region --> VPC 
+AZ --> Subnets 
