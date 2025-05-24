@@ -1,0 +1,6 @@
+IAM --> Identity and Access Management
+
+use-case
+Server --> EC2
+Storage --> S3, EBS, EFS
+User-Management --> IAM
