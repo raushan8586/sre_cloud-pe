@@ -18,6 +18,11 @@ ms3 --> pod3 --> container3 --> LB3
 
 Not recommneded
 
+Ingress Intro
+
+app1 --> ms1 --> 4 Pods
+If path /app1 --> svc1 --> 4 pods
+
 Ingress --> path/url based routing
 
 1. Ingress Controller --> Deploy this in the cluster to read the ingress resource and its rules. It creates the load balancer.
@@ -35,5 +40,5 @@ Steps:
 3. Deploy Ingress reosource (PATH/URL)--> ingress.yaml --> rules
 
 Path-based routing
-ALB -->  path1/sub-domain1 (aws.amazon.com)--> svc1 --> pods of m1
-ALB -->  path2/sub-domain2 (docs.aws.amazon.com) --> svc2 --> pods of m2
+ALB -->  path1/sub-domain1 (aws.amazon.com)--> svc1 (clusterIP) --> pods of m1
+ALB -->  path2/sub-domain2 (docs.aws.amazon.com) --> svc2 (clusterIP) --> pods of m2
