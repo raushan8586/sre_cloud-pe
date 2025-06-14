@@ -1,0 +1,5 @@
+AWS Storage Services
+1. EBS --> Elastic Block Service --> Root/Boot Volume, Database Servers --> IOPS
+2. S3 --> Simple Storage Service --> Object Storage --> Backups, media, tar
+3. EFS --> Elastic File System --> Centralized storage
+   - 3x costlier than EBS
