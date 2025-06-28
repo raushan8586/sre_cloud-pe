@@ -3,7 +3,7 @@ Load Pattern
 7 AM - 10 AM --> 200 TPS --> 20 servers --> 3 hrs
 10 AM - 6 PM --> 150 TPS --> 15 servers --> 8 hrs
 6 PM - 11 PM --> 500 TPS --> 50 servers --> 5 hrs
-11 PM - 7 AM (ND) --> 100 TPS --> 5 Servers --> 8 hrs
+11 PM - 7 AM (ND) --> 50 TPS --> 5 Servers --> 8 hrs
 
 auto-scaling
 
