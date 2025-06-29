@@ -1,0 +1,25 @@
+AWS Security Services:
+----------------------
+
+IAM
+Cognito
+GuardDuty --> Threat Detection Service: VPC Flow Logs, Cloud Trail, DNS Logs --> anything suspicious
+Network Firewall --> It is for VPC
+WAF
+Shield
+AWS Firewall Manager. EC2
+Amazon Inspector --> Vulnerability Assessment --> EC2, ECR, Lambda
+AWS Macie --> S3
+AWS Security Hub --> Centralized view of security state
+
+Amazon Detective: investigate and analyze suspicious security incidents, Flow Logs, Cloud Trail, GuardDuty ingestion to understand rootcause
+
+
+Data Security
+Encryption
+KMS --> managed
+HMS --> Not managed
+
+Secrets Manager --> vaults in on-prem, secrets will be store here, secrets rotation
+
+Trusted Advisor --> Infra inghts, Performance, cost optimization, security, Fault Tolerance, 
