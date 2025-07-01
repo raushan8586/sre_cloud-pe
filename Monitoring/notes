@@ -1,7 +1,8 @@
 Monitoring 
 
 Health Check/Uptime
-Performance
+Troubleshoot application issues
+Proactive Alerting
 
 Roles of a SRE/DevOps Engineer:
 1. POC on the monitoring tools --> metrics/log
