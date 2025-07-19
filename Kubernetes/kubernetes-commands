@@ -1,6 +1,6 @@
-eksctl create cluster --name=eksdemo1
+eksctl create cluster --name=eksdemo1 --> highly available master node + 1 nodegroup (2 worker nodes)
 
-eksctl create cluster --name=eksdemo1 --without-nodegroup
+eksctl create cluster --name=eksdemo1 --without-nodegroup --> highly available master node (control plane)
 
 eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo1 --approve
 
