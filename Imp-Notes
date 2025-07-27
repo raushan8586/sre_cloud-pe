@@ -25,3 +25,21 @@ open port 80 in security group inbound rule
 
 Region --> VPC 
 AZ --> Subnets 
+
+History --> 27th-July-2025
+[root@ip-172-31-15-127 html]# history
+    1  yum update -y
+    2  yum install httpd -y
+    3  lsof -i -P -n | grep LISTEN
+    4  systemctl status httpd
+    5  systemctl start httpd
+    6  systemctl status httpd
+    7  systemctl enable httpd
+    8  lsof -i -P -n | grep LISTEN
+    9  cd /usr/
+   10  ls -l
+   11  cd local
+   12  ls -l
+   13  cd /var/www/html/
+   14  ls -l
+   15  find / -name "index.html"
