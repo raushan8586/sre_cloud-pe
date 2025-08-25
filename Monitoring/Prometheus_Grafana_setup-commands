@@ -32,8 +32,13 @@ no need to execute below step 19 and 20
    21  ls -l
    22  sudo mv prometheus.yml /etc/prometheus
    23  sudo chown prometheus:prometheus /etc/prometheus
+
+no need to execute below step 24 and 25
+---------------------------------------------------------
    24  sudo chown -R prometheus:prometheus /etc/prometheus/consoles
    25  sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
+-----------------------------------------------------------------------------------
+
    26  sudo chown -R prometheus:prometheus /var/lib/prometheus
    27  vi /etc/prometheus/prometheus.yml
    28  vi /etc/systemd/system/prometheus.service
