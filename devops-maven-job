@@ -1,0 +1,41 @@
+https://github.com/jenkins-docs/simple-java-maven-app.git
+
+Artifact Name: ArtifactID + Version + Packaging --> as specified in pon.xml
+
+
+Java / Jenkins / Maven installations
+
+  root@ip-172-31-44-93:/opt# history
+    1  apt update -y
+    2  apt install fontconfig openjdk-21-jre -y
+    3  wget -O /etc/apt/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    4  echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+    5  apt update -y
+    6  apt install jenkins -y
+    7  lsof -i -P -n | grep LISTEN
+    8  cat /var/lib/jenkins/secrets/initialAdminPassword
+    9  clear
+   10  wget https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.tar.gz
+   11  ls -l
+   12  tar xvzf apache-maven-3.9.11-bin.tar.gz
+   13  ls -l
+   14  cd apache-maven-3.9.11/
+   15  ls -l
+   16  cd ..
+   17  ls -l
+   18  mv apache-maven-3.9.11 /opt/
+   19  cd /opt/
+   20  ls -l
+   21  mv apache-maven-3.9.11 maven
+   22  ls -l
+   23  mvn -version
+   24  ls -l
+   25  pwd
+   26  M3_HOME='/opt/maven'
+   27  echo $PATH
+   28  PATH="$M3_HOME/bin:$PATH"
+   29  export PATH
+   30  echo $PATH
+   31  mvn -version
+
+     
