@@ -2,6 +2,9 @@ https://github.com/jenkins-docs/simple-java-maven-app.git
 
 Artifact Name: ArtifactID + Version + Packaging --> as specified in pon.xml
 
+Goals
+clean package
+
 
 Java / Jenkins / Maven installations
 
