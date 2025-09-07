@@ -1,4 +1,6 @@
 https://github.com/jenkins-docs/simple-java-maven-app.git
+https://github.com/jglick/simple-maven-project-with-tests.git --> try this first
+https://github.com/jabedhasan21/java-hello-world-with-maven.git
 
 Artifact Name: ArtifactID + Version + Packaging --> as specified in pon.xml
 
