@@ -21,6 +21,7 @@ scaling:
 horizontal auto-scaling --> 4 vcpus, 16 GB RAM --> scale out, scale in
 vertical auto-scaling --> scale up and scale down
 
+Template --> custom AMI + Instance type + key-pair
 pre-configured --> web-servers/app-servers -- core/ram/disk --> custom AMI
 
 scaling policies:
