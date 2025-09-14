@@ -1,25 +1,33 @@
 AWS Security Services:
-----------------------
+1. IAM
+  IAM users, groups, roles --> enforce least privilege access
+  Amazon Cognito --> active directory on-premise --> manage user authentication, authorization, and user-data for mobile and web applications
 
-IAM
-Cognito
-GuardDuty --> Threat Detection Service: VPC Flow Logs, Cloud Trail, DNS Logs --> anything suspicious
-Network Firewall --> It is for VPC
-WAF
-Shield
-AWS Firewall Manager. EC2
-Amazon Inspector --> Vulnerability Assessment --> EC2, ECR, Lambda
-AWS Macie --> S3
-AWS Security Hub --> Centralized view of security state
+2. Network and Infrastructure Security
+VPC --> 
+  Private Subnets, 
+  Jump Server/Bastion host, 
+  Security Group, 
+  NACL, 
+  Flow Logs
+  Network Firewall
+WAF --> Web Application Firewall --> protect web applications from common exploits
+Shield -> DDoS protection
 
-Amazon Detective: investigate and analyze suspicious security incidents, Flow Logs, Cloud Trail, GuardDuty ingestion to understand rootcause
+3. Threat Detection and Monitoring
+   GuardDuty --> Threat Detection service --> VPC Flow Logs, CloudTrail, DNS Logs
+   Amazon Inspector --> vulnerability assessment --> EC2, ECR, Lambda
+   Amazon Macie --> S3 --> 
+	fully managed data security and privacy service offered by AWS. 
+	It uses machine learning and pattern matching to help you discover, classify, and protect sensitive data stored in Amazon S3.
+   CSPM --> Security Standards and compliance checks, automated compliance auditing
+   Secuity Hub --> unified security service
 
+4. Data Protection
+	Data encryption at rest and in transit
+	KMS --> Key Managememt Service
+	AWS Secrets Manager --> store and rotate secrets APIs keys, database credentials
 
-Data Security
-Encryption
-KMS --> managed
-HMS --> Not managed
-
-Secrets Manager --> vaults in on-prem, secrets will be store here, secrets rotation
-
-Trusted Advisor --> Infra inghts, Performance, cost optimization, security, Fault Tolerance, 
+Trusted Advisor --> provides recommendations on Security, Performance, Operational Excellence, Fault Tolerance, Service limits
+Certificate Manager
+	
