@@ -3,3 +3,32 @@
 3. Can lower env servers be stopped/shutdown over te weekends / long holidays
 4. Can Performance testing be done using spot instances
 5. Servers --> on-demand, Reservations
+
+-----------------------------------------------------
+
+Cost Optimization
+90% --> EC2 --> Server
+
+20% --> 8 Cores --> Efficient utilization of the resources
+
+Auto-Scaling
+
+<5% --> Storage --> S3 --> Lifecycle Rule
+
+Delete objects/content which could be deleted --> Flow Logs
+
+https://calculator.aws/#/
+AWS Compute Optimizer
+
+FinOps
+
+1. Use Reserved Instances - EC2 Instance Savings Plans
+2. Spot Instances for shor running tests with higher cores requirements
+3. Monitoring of the resources for over-allocation
+4. Auto-Scaling
+5. S3, EFS --> Lifecycle rules
+6. Cost-Explorer, Global view, Budgets, Cost Optimization Trusted advisors
+7. Terminate resources not in use
+8. Reduce data transfer --> caching using cloudfront
+9. Use AWS Calculator 
+10. Serverless services
