@@ -50,3 +50,26 @@ $ sudo docker-compose up
 # Things work
 
 MySQL --> https://www.w3schools.com/MySQL/default.asp
+
+---------------------------------------------------------------------------------
+
+/etc/systemd/system/httpd-container.service
+
+[Unit]
+Description=Apache HTTPD Docker Container
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a httpd-server
+ExecStop=/usr/bin/docker stop -t 2 httpd-server
+
+[Install]
+WantedBy=multi-user.target
+
+sudo systemctl enable httpd-container
+sudo systemctl start httpd-container
+
+
+sudo systemctl enable docker
