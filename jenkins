@@ -29,3 +29,6 @@ jenkins ALL=(ALL) NOPASSWD: ALL    --> Add this line to sudoers
 
 
 Plugin --> Build Pipeline
+
+DevOps documentation
+https://github.com/raushan8586/devops-2023-september/tree/main/jenkins
