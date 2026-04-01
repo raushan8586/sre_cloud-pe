@@ -4,6 +4,9 @@ eksctl create cluster --name=eksdemo1 --without-nodegroup --> highly available m
 
 eksctl create ... (cloudshell) --> cloudformation stack (template) --> Infra is getting created
 
+Cloudformation (AWS) --> Infrastructure as Code
+Terraform --> 3rd party tool
+
 
 eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster eksdemo1 --approve
 
