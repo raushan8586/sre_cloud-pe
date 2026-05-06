@@ -8,6 +8,17 @@
     8  apt install ansible -y
     9  clear
    10  ansible --version
+
+sudo mkdir -p /etc/ansible
+cd /etc/ansible
+vi /etc/ansible/hosts
+
+[dev]
+host1 ansible_ssh_host=13.201.10.27
+
+export ANSIBLE_HOST_KEY_CHECKING=False
+ansible -m ping host1
+
    11  cd /etc/ansible/
    12  ls -l
    13  cat ansible.cfg
