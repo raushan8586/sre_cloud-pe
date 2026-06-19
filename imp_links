@@ -24,6 +24,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_res
 
 S3
 https://aws.amazon.com/s3/storage-classes/
+https://awspolicygen.s3.amazonaws.com/policygen.html
 
 EKS/Terraform
 https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
