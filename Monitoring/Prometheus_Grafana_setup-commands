@@ -87,12 +87,24 @@ Node-Exporter:
 
 
 Grafana:
-62  wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
-   63  sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
-   64  apt update -y
-   65  apt install grafana
-   66  systemctl status grafana-server
-   67  systemctl start grafana-server
-   68  systemctl status grafana-server
-   69  lsof -i -P -n | grep LISTEN
-   70  history
+apt update
+apt install -y wget gpg
+
+mkdir -p /etc/apt/keyrings
+
+wget -qO- https://packages.grafana.com/gpg.key | \
+gpg --dearmor -o /etc/apt/keyrings/grafana.gpg
+
+echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" \
+> /etc/apt/sources.list.d/grafana.list
+
+apt update
+apt install -y grafana
+
+systemctl daemon-reload
+systemctl enable --now grafana-server
+systemctl status grafana-server
+
+ufw allow 3000/tcp
+
+
