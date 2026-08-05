@@ -12,7 +12,7 @@ Install docker-compose
   151  docker-compose version
 
 
-
+  sudo su -
 1  apt update -y
     2  apt install docker.io -y
     3  docker images
