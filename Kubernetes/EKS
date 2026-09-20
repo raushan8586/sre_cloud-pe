@@ -19,6 +19,16 @@ aws configure
 3. EKSCTL --> command line for AWS EKS --> https://eksctl.io/getting-started/
 --> https://eksctl.io/installation/
 
+[cloudshell-user@ip-10-135-51-103 ~]$ mkdir -p $HOME/bin
+[cloudshell-user@ip-10-135-51-103 ~]$ cp /usr/local/bin/eksctl $HOME/bin/eksctl
+[cloudshell-user@ip-10-135-51-103 ~]$ chmod +x $HOME/bin/eksctl
+[cloudshell-user@ip-10-135-51-103 ~]$ echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
+[cloudshell-user@ip-10-135-51-103 ~]$ source ~/.bashrc
+[cloudshell-user@ip-10-135-51-103 ~]$ which eksctl
+~/bin/eksctl
+[cloudshell-user@ip-10-135-51-103 ~]$ eksctl version
+0.230.0
+
 Logs:
 https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/
 
